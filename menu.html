@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>menu</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css ">
+	<style type="text/css">
+		#icon{
+			position: relative;
+			top: -70px;
+		}
+		.slidenavbar{
+			width: 43px;
+			height: 950px;
+			background-color: gray;
+		}
+		#show{
+			position: relative;
+			top: -917px;
+			width: 20%;
+			height: 900px;
+			background-color: gray;
+		}
+		#show li{
+			list-style: none;
+			text-decoration: none;
+		}
+		.menu li{
+		position: relative;
+		top: 0px;
+		left: 20px;
+		float: left;
+		list-style: none;
+		padding: 5px;
+		margin: 20px;
+		color:black;
+	}
+	</style>
+	
+</head>
+<body>
+	<div class="menu">
+	<ul>
+		<li>Home</li>
+		<li>Portofolio</li>
+		<li>Gallery</li>
+		<li>About</li>
+		<li>contact</li>
+	</ul>
+</div>
+<div class="slidenavbar">
+	<i class="fas fa-align-justify fa-3x" id="icon" style="float: left; background-color: orange;"></i>
+	<br>
+	
+	
+</div>
+<div id="show">
+	<ul>
+		<li>Home</li>
+		<li>Documentation</li>
+		<li>Examples</li>
+		<li>Icons</li>
+		<li>Themes</li>
+		<li>Expo</li>
+		<li>Blog</li>
+	</ul>
+	</div>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+	document.getElementById("show").style.display ='none';
+	document.getElementById("icon").onclick=()=>{
+		if(document.getElementById("show").style.display =='none'){
+			document.getElementById("show").style.display ='block';
+		}
+		else{
+			document.getElementById("show").style.display ='none';
+		}
+
+	}
+
+})
+</script></body>
+</html>

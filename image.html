@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>image</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="agency.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <style type="text/css">
+            img{
+                opacity: 100%;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container" >
+        <h4 class="h4 text-center">Portfolio</h4> 
+        <p class="text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure ad dolor cumque quibusdam ipsum mollitia id deserunt, Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex aut consectetur quasi reprehenderit ut? Dolor nobis cumque eaque, provident et quas voluptatibus sunt, fugiat dolore assumenda facere at! Labore, inventore. </p>
+        <div class="row">
+            <div class="col-md-4 bg-light my-3"><img src="1.jpg" id="img1" width="300px" height="300px"></div>
+            <div class="col-md-4 bg-light my-3 "><img src="2.jpg" id="img2" width="300px" height="300px"></div>
+            <div class="col-md-4 bg-light my-3"><img src="3.jpg" id="img3" width="300px" height="300px"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 bg-light my-3"><img src="4.jpg" id="img4" width="300px" height="300px"></div>
+            <div class="col-md-4 bg-light my-3 "><img src="5.jpg" id="img5" width="300px" height="300px"></div>
+            <div class="col-md-4 bg-light my-3"><img src="6.jpg" id="img6" width="300px" height="300px"></div>
+        </div>
+        <i class="fas fa-ellipsis-h"></i>   
+    </div>
+
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(){
+    document.getElementById('img1').onmouseover=()=>{
+        img1.style.opacity = '0.2';
+    }
+    document.getElementById('img1').onmouseout=()=>{
+        img1.style.opacity = '100%';
+    }
+    document.getElementById('img2').onmouseover=()=>{
+        img2.style.opacity = '0.2';
+    }
+    document.getElementById('img2').onmouseout=()=>{
+        img2.style.opacity = '100%';
+    }
+    document.getElementById('img3').onmouseover=()=>{
+        img3.style.opacity = '0.2';
+    }
+    document.getElementById('img3').onmouseout=()=>{
+        img3.style.opacity = '100%';
+    }
+    document.getElementById('img4').onmouseover=()=>{
+        img4.style.opacity = '0.2';
+    }
+    document.getElementById('img4').onmouseout=()=>{
+        img4.style.opacity = '100%';
+    }
+    document.getElementById('img5').onmouseover=()=>{
+        img5.style.opacity = '0.2';
+    }
+    document.getElementById('img5').onmouseout=()=>{
+        img5.style.opacity = '100%';
+    }
+    document.getElementById('img6').onmouseover=()=>{
+        img6.style.opacity = '0.2';
+    }
+    document.getElementById('img6').onmouseout=()=>{
+        img6.style.opacity = '100%';
+    }
+
+})
+    </script>
+
+    </body>
+</html>

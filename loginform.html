@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loginform</title>
+</head>
+<body>
+	<h1>Login Form</h1>
+<form>
+	<input type="text" id="txt" placeholder="enter your name">
+	<div id="name"></div>
+	<br>
+	<input type="text" id="password" placeholder="enter your passwod">
+	<div id="pas"></div>
+	<br>
+	<input type="submit" name="login" id="btnsubmit">
+</form>
+<ul id="task"></ul>
+
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+
+		document.querySelector("#btnsubmit").onclick=()=>{
+			var txt=document.querySelector("#txt").value;
+			if (txt!=''){
+				console.log(txt);
+			}
+			else{
+			document.getElementById("name").innerHTML="please enter name";
+			document.getElementById("name").style.color = 'red';
+			}
+			var pw=document.querySelector("#password").value;
+			if (pw!=''){
+				console.log(pw);
+			}
+			else{
+				document.getElementById("pas").innerHTML="please enter password";
+				document.getElementById("pas").style.color = 'red';
+			}
+			
+		return false;	
+		}
+	});
+</script>
+</body>
+</html>

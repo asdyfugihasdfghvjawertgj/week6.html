@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>father information</title>
+</head>
+<body>
+<h1>Father information</h1>
+<label>status</label>
+<input type="radio" name="father" id="live" checked="checked">live
+<input type="radio" name="father" id="expire">Expire
+<div id="show">
+	Ph no:<input type="text" placeholder="09769977572">
+	Adddress:<input type="text" placeholder="kawlin">
+</div>
+<h1>Mother information</h1>
+<label>status</label>
+<input type="radio" name="mother" id="live1" checked="checked">live
+<input type="radio" name="mother" id="expire1">Expire
+<div id="show1">
+	Ph no:<input type="text" placeholder="09769977572">
+	Adddress:<input type="text" placeholder="kawlin">
+</div>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(){
+	document.getElementById("live").onclick=()=>{
+		document.getElementById("show").style.display = 'block';
+	}
+	document.getElementById("expire").onclick=()=>{
+		document.getElementById("show").style.display = 'none';
+	}
+	document.getElementById("live1").onclick=()=>{
+		document.getElementById("show1").style.display = 'block';
+	}
+	document.getElementById("expire1").onclick=()=>{
+		document.getElementById("show1").style.display = 'none';
+	}
+
+});
+</script>
+</body>
+</html>
